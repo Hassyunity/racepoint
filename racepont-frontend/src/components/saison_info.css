@@ -1,0 +1,261 @@
+/* ================= CONTAINER ================= */
+.season-container {
+  background: radial-gradient(circle at top, #1b1d28, #000);
+  padding: 60px 40px;
+  color: white;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+.season-header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.season-bar {
+  height: 10px;
+  width: 100%;
+  margin-top: -10px;
+  background: linear-gradient(50deg, #e10600, #2c2948);
+  margin-bottom: 20px;
+}
+
+.season-bar1 {
+  height: 10px;
+  margin-left: 10px;
+  width: 98%;
+  background: linear-gradient(50deg, #16d65b, #fff, #e10600);
+  margin-bottom: 20px;
+}
+
+.season-header h1 {
+  font-family: 'Orbitron', 'Roboto Mono', monospace; /* style digital / mécanique */
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  
+}
+
+/* ================= MENU PRINCIPAL ================= */
+.season-main-menu {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.season-main-menu span {
+  cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+  padding-bottom: 8px;
+  transition: opacity 0.25s ease;
+}
+
+.season-main-menu span.active {
+  opacity: 1;
+}
+
+.season-main-menu span.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #16d65b;
+  border-radius: 2px;
+}
+
+/* ================= MENU TABS ================= */
+.season-tabs {
+  display: flex;
+  gap: 32px;
+  margin-top: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.season-tabs span {
+  cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+  padding-bottom: 8px;
+  transition: opacity 0.25s ease;
+}
+
+.season-tabs span:hover {
+  opacity: 0.85;
+}
+
+.season-tabs .active {
+  opacity: 1;
+}
+
+.season-tabs .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #e10600;
+  border-radius: 2px;
+}
+
+/* ================= PODIUM ================= */
+.season-podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+/* ================= CARD ================= */
+.season-card {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.season-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* ================= THEMES ================= */
+.season-card.orange {
+  background-image: url("/src/assets/fonds/grey.jpg");
+    background-size: cover;
+}
+
+.season-card.blue {
+  background-image: url("/src/assets/fonds/blue.jpg");
+  background-size: cover;
+}
+.season-card.green {
+  background-image: url("/src/assets/fonds/purple.jpg");
+  background-size: cover;
+}
+
+/* ================= POSITIONS ================= */
+.pos-1 {
+  height: 420px;
+}
+
+.pos-2 {
+  height: 360px;
+}
+
+.pos-3 {
+  height: 340px;
+}
+
+/* ================= TEXT ================= */
+.season-rank {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.season-info {
+  z-index: 2;
+}
+
+.season-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.season-info p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.season-flag {
+  width: 28px;
+  margin-top: 10px;
+}
+
+/* ================= DRIVER IMAGE ================= */
+.season-driver-photo {
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  height: 90%;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .season-podium {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .season-card {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .pos-1,
+  .pos-2,
+  .pos-3 {
+    height: 380px;
+  }
+}
+
+/* ================= TABLEAU ================= */
+.season-table-container {
+  margin-top: 60px;
+  overflow-x: auto;
+}
+
+.season-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* background: rgba(30, 30, 50, 0.8); */
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+}
+
+.season-table th, .season-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.season-table th {
+  background: #fff;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.season-table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.season-flag-table {
+  width: 24px;
+  display: inline-block;
+  margin-right: 8px;
+}

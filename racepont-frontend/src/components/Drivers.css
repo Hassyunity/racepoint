@@ -1,0 +1,105 @@
+/* ==================== GLOBAL WRAPPER ==================== */
+.drivers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: #111;
+}
+
+.drivers-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ==================== CARDS ==================== */
+.drivers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.driver-card {
+  position: relative;
+  width: 220px;     /* largeur stable */
+  height: 300px;    /* hauteur stable */
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #000;
+}
+
+.driver-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* ==================== IMAGES ==================== */
+.driver-photo {
+  position: absolute;         /* IMPORTANT */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image pilote → visible par défaut */
+.driver-photo.pilot {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Image voiture → invisible au départ */
+.driver-photo.car {
+  opacity: 0;
+  z-index: 1;
+}
+
+/* ==================== HOVER ==================== */
+.driver-card:hover .driver-photo.pilot {
+  opacity: 0;                 /* disparaît */
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.driver-card:hover .driver-photo.car {
+  opacity: 1;                 /* apparaît */
+  transform: scale(1.05);     /* zoom identique → pas de déformation */
+  filter: brightness(1);      /* voiture claire */
+}
+
+/* ==================== TEXTES ==================== */
+.driver-name {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  font-size: 1.1rem;
+  background: #2c2948aa;
+  padding: 6px 12px;
+  font-weight: bold;
+  z-index: 3; /* toujours au-dessus des images */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.driver-type {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: linear-gradient(90deg, #E10600, #000);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  min-width: 80px;
+  text-align: center;
+  z-index: 3;
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2,
+  "firstName": "Lando",
+  "lastName": "Norris",
+  "team": "McLaren",
+  "number": 4,
+  "countryFlag": "🇬🇧",
+  "image": "/src/assets/norris.avif",
+  "bioImage": "/src/assets/norris.webp",
+  "color": "#FF8700",
+  "personal": {
+    "dateOfBirth": "13/11/1999",
+    "placeOfBirth": "Bristol, England"
+  },
+  "bio": "Lando Norris may not be named after Star Wars rebel Lando Calrissian – his Mum just liked the moniker – but the 2025 World Champion has flair and fighting spirit in bountiful supply. McLaren had the British teenager on their books for two years before fast-tracking him into Formula 1 in 2019. A firecracker in his junior career, with a penchant for pole positions and wheel-to-wheel tussles, Norris delivered immediately.",
+  "stats": {
+    "season": {
+      "seasonPosition": "1st",
+      "seasonPoints": 423,
+      "grandPrixRaces": 24,
+      "grandPrixPoints": 394,
+      "grandPrixWins": 7,
+      "grandPrixPodiums": 18
+    },
+    "career": {
+      "grandPrixEntered": 152,
+      "careerPoints": 1430,
+      "highestRaceFinish": "1 (x11)"
+    }
+  }
+}

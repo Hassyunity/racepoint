@@ -1,0 +1,54 @@
+{
+  "rows": [
+    {
+      "background": "dark-gray",
+      "partners": [
+        { "name": "LVMH", "logo": "/assets/max.avif" },
+        { "name": "PIRELLI", "logo": "/assets/norris.avif" },
+        { "name": "ARAMCO", "logo": "/assets/madagascar.png" },
+        { "name": "HEINEKEN", "logo": "/assets/madagascar.png" },
+        { "name": "AWS", "logo": "/assets/madagascar.png" },
+        { "name": "LENOVO", "logo": "/assets/madagascar.png" },
+        { "name": "DHL", "logo": "/assets/madagascar.png" },
+        { "name": "QATAR AIRWAYS", "logo": "/assets/madagascar.png" },
+        { "name": "MSC", "logo": "/assets/madagascar.png" },
+        { "name": "CRYPTO.COM", "logo": "/assets/madagascar.png" },
+        { "name": "SALESFORCE", "logo": "/assets/madagascar.png" }
+      ]
+    },
+    {
+      "background": "black",
+      "partners": [
+        { "name": "LOUIS VUITTON", "logo": "/assets/madagascar.png" },
+        { "name": "TAG HEUER", "logo": "/assets/madagascar.png" },
+        { "name": "MOËT HENNESSY", "logo": "/assets/madagascar.png" },
+        { "name": "AMERICAN EXPRESS", "logo": "/assets/madagascar.png" },
+        { "name": "SANTANDER", "logo": "/assets/madagascar.png" },
+        { "name": "ALLWYN", "logo": "/assets/madagascar.png" },
+        { "name": "GLOBANT", "logo": "/assets/madagascar.png" },
+        { "name": "UPS", "logo": "/assets/madagascar.png" },
+        { "name": "PARAMOUNT+", "logo": "/assets/madagascar.png" },
+        { "name": "BARILLA", "logo": "/assets/madagascar.png" },
+        { "name": "LIQUI MOLY", "logo": "/assets/madagascar.png" },
+        { "name": "NESTLÉ", "logo": "/assets/madagascar.png" },
+        { "name": "PWC", "logo": "/assets/madagascar.png" }
+      ]
+    },
+    {
+      "background": "light-gray",
+      "partners": [
+        { "name": "PEPSICO", "logo": "/assets/madagascar.png" }
+      ]
+    },
+    {
+      "background": "medium-gray",
+      "partners": [
+        { "name": "PUMA", "logo": "/assets/madagascar.png" },
+        { "name": "TATA COMMUNICATIONS", "logo": "/assets/madagascar.png" },
+        { "name": "AGGREKO", "logo": "/assets/madagascar.png" },
+        { "name": "BBS", "logo": "/assets/madagascar.png" },
+        { "name": "MCDONALD'S", "logo": "/assets/madagascar.png" }
+      ]
+    }
+  ]
+}

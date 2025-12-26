@@ -1,0 +1,231 @@
+/* footer.css */
+
+/* Container principal du footer */
+.f1-footer {
+  background-color: #2a2a2e;
+  padding: 0;
+  color: #ffffff;
+}
+
+.footer-content {
+  padding: 4rem 2rem 0;
+  background-color: #2a2a2e;
+}
+
+/* En-tête avec titre et bouton */
+.footer-header {
+  max-width: 1400px;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 3rem;
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding-left: 20px;
+  background-color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.view-all-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover::after {
+  transform: scaleX(1);
+}
+
+.view-all-btn:hover {
+  opacity: 0.8;
+}
+
+/* Grille des logos partenaires */
+.partners-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.partner-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0 3rem;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.partner-row:nth-child(1) {
+  background-color: #2a2a2e;
+}
+
+.partner-row:nth-child(2) {
+  background-color: #1a1a1e;
+}
+
+.partner-row:nth-child(3) {
+  background-color: #3a3a3e;
+}
+
+.partner-row:nth-child(4) {
+  background-color: #252529;
+}
+
+/* Container de chaque logo */
+.partner-logo {
+  display: flex;
+  flex-direction: column; /* LOGO au-dessus, TEXTE en dessous */
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+.partner-logo img {
+  max-width: 140px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.partner-logo:hover img {
+  opacity: 1;
+}
+
+/* Styles pour les noms de partenaires en texte */
+.partner-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.7;
+  line-height: 1.2;
+  transition: opacity 0.3s ease;
+}
+
+.partner-logo:hover .partner-text {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .partner-row {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 2rem;
+  }
+  
+  .footer-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 3rem 0 0;
+  }
+
+  .footer-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 0 1.5rem 2rem;
+  }
+  
+  .partner-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 1.5rem;
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .footer-title {
+    font-size: 1.75rem;
+  }
+  
+  .partner-logo {
+    height: 45px;
+  }
+  
+  .partner-logo img {
+    max-width: 110px;
+    max-height: 45px;
+  }
+
+  .partner-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 2.5rem 0 0;
+  }
+
+  .footer-header {
+    padding: 0 1rem 1.5rem;
+  }
+  
+  .partner-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+  }
+  
+  .partner-text {
+    font-size: 0.9rem;
+  }
+
+  .partner-logo {
+    height: 40px;
+  }
+
+  .partner-logo img {
+    max-width: 100px;
+    max-height: 40px;
+  }
+}

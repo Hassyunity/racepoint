@@ -1,0 +1,47 @@
+{
+  "id": 4,
+  "firstName": "Lewis",
+  "lastName": "Hamilton",
+  "team": "Ferrari",
+  "number": 44,
+  "countryFlag": "🇬🇧",
+  "image": "/src/assets/lewis.avif",
+  "bioImage": "/src/assets/lewish.avif",
+  "color": "#E80020",
+  "personal": {
+    "dateOfBirth": "07/01/1985",
+    "placeOfBirth": "Stevenage, England"
+  },
+  "quote": "DRIVING A SCUDERIA FERRARI HP CAR FOR THE FIRST TIME WAS ONE OF THE BEST FEELINGS OF MY LIFE.",
+  "bio": "‘Still I Rise’ – these are the words emblazoned across the back of Lewis Hamilton’s helmet and tattooed across his shoulders. In a stellar Formula 1 career spanning spells with McLaren, Mercedes and Ferrari, Hamilton has risen to the top of the all-time pole positions list and matched the legendary Michael Schumacher’s seven world titles. Is he the G.O.A.T? Few would deny that he’s in the conversation – twinning his relentless speed with a refusal to conform to stereotypes. Yes, he may now be in the most challenging phase of his journey – a tough first season with Ferrari was his first not to feature a Grand Prix podium appearance – but few doubt Hamilton still has more to add to the F1 history books.",
+  "stats": {
+    "season": {
+      "seasonPosition": "6th",
+      "seasonPoints": 156,
+      "grandPrixRaces": 24,
+      "grandPrixPoints": 135,
+      "grandPrixWins": 0,
+      "grandPrixPodiums": 0,
+      "grandPrixPoles": 0,
+      "grandPrixTop10s": 19,
+      "fastestLaps": 1,
+      "dnfs": 2,
+      "sprintRaces": 6,
+      "sprintPoints": 21,
+      "sprintWins": 1,
+      "sprintPodiums": 2,
+      "sprintPoles": 1,
+      "sprintTop10s": 4
+    },
+    "career": {
+      "grandPrixEntered": 380,
+      "careerPoints": 5018.5,
+      "highestRaceFinish": "1 (x105)",
+      "podiums": 202,
+      "highestGridPosition": "1 (x104)",
+      "polePositions": 104,
+      "worldChampionships": 7,
+      "dnfs": 34
+    }
+  }
+}

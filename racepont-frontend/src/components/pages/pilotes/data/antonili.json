@@ -1,0 +1,47 @@
+{
+  "id": 1,
+  "firstName": "Kimi",
+  "lastName": "Antonelli",
+  "team": "Mercedes",
+  "number": 12,
+  "countryFlag": "🇬🇧",
+  "image": "/src/assets/kimi.avif",
+  "bioImage": "/src/assets/antonelli-bio.webp",
+  "color": "#27F4D2",
+  "personal": {
+    "dateOfBirth": "25/08/2006",
+    "placeOfBirth": "Bologna, Italy"
+  },
+  "quote": "RACING FOR MERCEDES IS A BIG RESPONSIBILITY, BUT AT THE SAME TIME IT’S A GREAT OPPORTUNITY AND A PRIVILEGE.",
+  "bio": "Andrea Kimi Antonelli’s rise to the F1 grid has been nothing short of meteoric. Son of sportscar racer Marco, the Bologna native was scouted by Mercedes during a karting career that saw him collect a scarcely believable number of winner's trophies. He went on to make his car racing debut aged just 15, with more titles swiftly following – in both the Italian and ADAC F4 championships in 2022 and the Formula Regional Middle East and European categories a year later. Mercedes already knew they had a star on their hands and decided that promotion to F2 – effectively skipping a step on the ladder – would better serve their latest hot prospect. Shortly after Antonelli’s 18th birthday, the squad announced at the Italian Grand Prix that the home favourite would indeed be replacing seven-time world champion Hamilton at the Silver Arrows.",
+  "stats": {
+    "season": {
+      "seasonPosition": "7th",
+      "seasonPoints": 150,
+      "grandPrixRaces": 24,
+      "grandPrixPoints": 135,
+      "grandPrixWins": 0,
+      "grandPrixPodiums": 3,
+      "grandPrixPoles": 0,
+      "grandPrixTop10s": 14,
+      "fastestLaps": 0,
+      "dnfs": 4,
+      "sprintRaces": 6,
+      "sprintPoints": 15,
+      "sprintWins": 0,
+      "sprintPodiums": 1,
+      "sprintPoles": 1,
+      "sprintTop10s": 5
+    },
+    "career": {
+      "grandPrixEntered": 24,
+      "careerPoints": 150,
+      "highestRaceFinish": "2 (x1)",
+      "podiums": 3,
+      "highestGridPosition": "2 (x1)",
+      "polePositions": 0,
+      "worldChampionships": 0,
+      "dnfs": 4
+    }
+  }
+}

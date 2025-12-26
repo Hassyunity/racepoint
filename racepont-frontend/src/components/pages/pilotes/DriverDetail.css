@@ -1,0 +1,130 @@
+.driver-page {
+    background-color: transparent;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.container { max-width: 1200px; margin: 0 auto; }
+.back-btn { background: none;
+    border: 1px solid #38383f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Header */
+.driver-header {
+    background-image: url("../../../assets/fonds/course1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.number-bg { font-size: 2.5rem; opacity: 0.2; font-weight: 900; }
+.fname { display: block; font-size: 1.5rem; }
+.lname { display: block; font-size: 3.5rem; font-weight: 900; text-transform: uppercase; line-height: 1; }
+.header-img img { height: 250px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
+
+/* Layout Stats */
+.stats-section { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 50px; margin-bottom: 60px; }
+.section-title { font-size: 3rem; font-weight: 900; letter-spacing: -2px; margin: 0; text-transform: uppercase; }
+.season-title { font-size: 1.5rem; border-bottom: 1px solid #38383f; padding-bottom: 10px; margin-bottom: 30px; font-weight: 900; }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.stat-item { border-bottom: 1px solid #38383f; padding-bottom: 10px; display: flex; flex-direction: column; }
+.stat-item span { color: #949498; font-size: 0.8rem; margin-bottom: 5px; }
+.stat-item strong { font-size: 2rem; font-weight: 900; }
+
+.career-card { background: #1f1f27; padding: 30px; border-radius: 15px; }
+.career-row { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #38383f; align-items: center; }
+.career-row:last-child { border-bottom: none; }
+.career-row span { color: #949498; font-size: 0.9rem; }
+.career-row strong { font-size: 1.5rem; font-weight: 900; }
+
+/* Bio Section */
+.bio-section { margin-top: 50px; }
+
+.bio-header-info {
+  display: flex;
+  gap: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.personal-item .label {
+  display: block;
+  color: #949498;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.personal-item .value {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.bio-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  min-height: 400px;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.bio-image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bio-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.bio-image-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #15151e;
+  background-image: linear-gradient(135deg, #1f1f27 25%, transparent 25%), 
+                    linear-gradient(225deg, #1f1f27 25%, transparent 25%), 
+                    linear-gradient(45deg, #1f1f27 25%, transparent 25%), 
+                    linear-gradient(315deg, #1f1f27 25%, transparent 25%);
+  background-position: 40px 0, 40px 0, 0 0, 0 0;
+  background-size: 80px 80px;
+  opacity: 0.4;
+}
+
+.bio-text p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #e6e6e6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .stats-section, .bio-content-container { grid-template-columns: 1fr; }
+  .bio-header-info { flex-direction: column; gap: 20px; }
+  .bio-image-wrapper { height: 300px; }
+}
